@@ -16,7 +16,4 @@ class file_upload(models.Model):
     text = models.FileField(upload_to='text/')
 
 
-    #cover = models.ImageField(upload_to='text/')
-
-
 # Create your models here.

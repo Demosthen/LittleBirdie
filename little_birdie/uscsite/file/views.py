@@ -38,7 +38,9 @@ def read_file(request):
             print('uh oh')
     #"../media/text/test.txt"
     template = loader.get_template('upload.html')
+    str = "does this work"
     context = {
-        'file_content': file_content
+        'file_content': file_content,
+        'test': str
     }
     return HttpResponse(template.render(context))

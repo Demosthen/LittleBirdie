@@ -2,12 +2,14 @@
 
 {% block main_content %}
 
-<h1>Create Post Page</h1>
+<center>
+<h1 style = "font-family:georgia,garamond,serif;">Upload a File</h1>
 <form method="post" enctype="multipart/form-data">
   {% csrf_token %}
-  {{ form.as_p }}
+  <center>{{ form.as_p }}</center>
   <button type="submit">Submit New Post</button>
 </form>
+</center>
 
 
 

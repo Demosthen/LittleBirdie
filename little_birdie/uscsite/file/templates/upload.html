@@ -2,11 +2,13 @@
 
 {% block main_content %}
 
-  <h1>File Uploading</h1>
+  <center>
+  <h1 style = "font-family:georgia,garamond,serif;">File Uploaded! Look at the Results Below:</h1>
   <ul>
-      {% for each in file_content%}
-      <span>{{each}}</span>
-      {% endfor %}
+      <span>{{file_content}}</span>
   </ul>
+  </center>
 
+  <hr>
+  <p>{{test}}</p>
 {% endblock %}

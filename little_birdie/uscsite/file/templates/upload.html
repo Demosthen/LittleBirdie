@@ -4,7 +4,9 @@
 
   <h1>File Uploading</h1>
   <ul>
-      <span>{{file_content}}</span>
+      {% for each in file_content%}
+      <span>{{each}}</span>
+      {% endfor %}
   </ul>
 
 {% endblock %}
